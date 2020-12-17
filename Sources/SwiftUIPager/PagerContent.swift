@@ -272,7 +272,7 @@ extension Pager.PagerContent {
         self.onDraggingEnded?(Double(self.direction == .forward ? pageIncrement : -pageIncrement))
 
         var defaultPagingAnimation: PagingAnimation = .standard
-        var speed: Double = 1
+        var speed: Double = 3
         if allowsMultiplePagination && pageIncrement > 1 {
             defaultPagingAnimation = .steep
             speed = 1 / min(4, Double(pageIncrement))
